@@ -3,14 +3,33 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+    width: 100vw;
+    height: 100vh;
+}
 
 header{
     background-color: white;
-    padding: 1rem;
+    padding: .5rem;
+    width: 80vw;
+    height: 25vh;
+    margin: 20px 10%;
+    background-image: url(../assets/design1_image1.jpg);
+    background-size: cover;
+    background-position: 0 40%;
+    position: absolute;
+    top: 5%;
+}
+
+header h1{
+    position: relative;
+    bottom: 30%;
 }
 
 nav{
-padding-left: 25rem;
+    position:relative;
+    left: 60%;
+    bottom: 38%;
 }
 
 nav a{
@@ -20,24 +39,49 @@ nav a{
     padding: 0.5rem;
     text-align: center;
     text-decoration: none;
-    border-radius: 0px;
     border-color: black;
     border-style:solid;
     border-width: 0.1rem;
     
 }
-header img{
-    width:700px;
-    height: 200px;
-}
-h2{
+
+header h2{
     text-align: center;
     border-color: black;
     border-style: solid ;
-    width: 45rem;
+    width: 80vw;
+    position:relative;
+    top:61%;
+    right:0.6%;
 }
 
-aside img{
-    width: 100px;
-    
+aside{
+    position:relative;
+    margin-left: 10%;
+    margin-right: 80%;
+    top: 40%;
+    padding: 1rem;
+}
+
+#logoduck{
+    width: 150px;
+    position: relative;
+}
+
+#imghockey{
+    width:150px;
+   position: relative;
+   bottom:20%;
+}
+
+section{
+    position:relative;
+    margin-left: 25%;
+    margin-right: 13%;
+    top:5%;
+    padding: .5rem;
+}
+
+section p{
+    padding-bottom: 1rem;
 }
