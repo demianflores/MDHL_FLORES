@@ -28,13 +28,17 @@ header h1{
 }
 
 nav{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    align-items: flex-start;
     position:relative;
-    left: 60%;
     bottom: 38%;
 }
 
 nav a{
-    display: inline-block;
     width: 5rem;
     height: 2rem;
     padding: 0.2rem;
@@ -59,23 +63,21 @@ header h2{
 aside{
     position:absolute;
     margin-left: 10%;
-    margin-right: 80%;
     top:40%;
     padding: 1rem;
+    display: flex;
+    flex-direction: column;
 }
 
 #logoduck{
     width: 150px;
-    position: relative;
 }
 
 #imghockey{
     width:150px;
-   position: relative;
-   bottom:20%;
 }
 
-section{
+#info{
     position:absolute;
     margin-left: 25%;
     margin-right: 13%;
@@ -83,6 +85,52 @@ section{
     padding: .5rem;
 }
 
-section p{
+#info p{
     padding-bottom: 1rem;
+    padding-left: 1rem;
+}
+
+#table{
+    position:absolute;
+    display: table;
+    margin-left: 16%;
+    top:40%;
+}
+
+#table>h2{
+    text-align: center;
+}
+
+caption{
+    text-align: left;
+}
+
+th, td{
+    padding: .3rem;
+}
+
+#rules{
+    position: absolute;
+    margin-left: 15%;
+    margin-right: 13%;
+    top:40%;
+    padding: .5rem;
+}
+
+#rules>h2, #rules>p{
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+div>h3{
+    padding-bottom: 1rem;
+}
+
+dt, dd, li {
+    padding: .5rem;
+}
+
+ol.a{
+    list-style-type: lower-alpha;
+    padding: 0;
 }
