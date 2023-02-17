@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../assets/Logo-Mighty-ducks-01.ico" type="image/x-icon">
+    <title>Registration Form</title>
+  </head>
+  <body>
+    
+    <form action="show_data.html">
+      <h1>Registration Form</h1>
+      <fieldset>
+        <legend>Personal Info</legend>
+        <label
+          >Player's First name:
+          <input type="text" id="fname" name="fname">
+        </label>
+        <label for="lname"
+          >Last name: <input type="text" id="lname" name="lname"> <br>
+        </label>
+        <label for="address"
+          >Street Address:
+          <input type="text" id="address" name="address"><br>
+        </label>
+        <label for="city"
+          >City:
+          <input type="text" id="city" name="city">
+        </label>
+        <label for="zipcode"
+          >Zip Code: <input type="text" id="zipcode" name="zipcode"><br>
+        </label>
+        <label for="bdate"
+          >Birth Date (dd/mm/yyyy):
+          <input type="date" id="bdate" name="bdate">
+        </label>
+        Gender:
+        <label>
+          Female
+          <input type="radio" name="gender" value="Female">
+        </label>
+        <label>
+          Male
+          <input type="radio" name="gender" value="Male"><br>
+        </label>
+
+        Grade:
+        <label for="preschool">
+          <input type="radio" id="preschool" name="grade" value="preschool">
+          Pre-School
+        </label>
+        <label for="grade1">
+          <input type="radio" id="grade1" name="grade" value="1st">
+          1st
+        </label>
+        <label for="grade2">
+          <input type="radio" id="grade2" name="grade" value="2nd">
+          2nd
+        </label>
+        <label for="grade3">
+          <input type="radio" id="grade3" name="grade" value="3rd">
+          3rd
+        </label>
+        <label for="grade4">
+          <input type="radio" id="grade4" name="grade" value="4th">
+          4th
+        </label>
+        <label for="grade5">
+          <input type="radio" id="grade5" name="grade" value="5th">
+          5th
+          <br>
+        </label>
+      </fieldset>
+
+      <fieldset>
+        <legend>Wich elementary school do you live near?</legend>
+        <label for="select">Closest School:</label>
+        <select name="school" id="select">
+          <option disabled selected>School</option>
+          <option value="AJK">AJ Katzenmaier</option>
+          <option value="GB">Greenbay</option>
+          <option value="HAY">Howard A Yeager</option>
+          <option value="MPH">Marjorie P Hart</option>
+          <option value="NE">North Elementary</option>
+          <option value="SE">South Elementary</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>What position(s) do you normally play (check all that apply)</legend>
+        <label for="position1">
+          <input type="checkbox" id="position1" name="position1" value="FW">
+          Forward
+        </label>
+        <label for="position2">
+          <input type="checkbox" id="position2" name="position2" value="MF">
+          Midflield </label
+        ><br>
+        <label for="position3">
+          <input type="checkbox" id="position3" name="position3" value="DF">
+          Defense
+        </label>
+        <label for="position4">
+          <input type="checkbox" id="position4" name="position4" value="GK">
+          Goalkeeper </label
+        ><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Uniform Size</legend>
+        <label for="ysmall">
+          <input type="radio" id="ysmall" name="uniform" value="YS">
+          Youth Small
+        </label>
+        <label for="medium">
+          <input type="radio" id="medium" name="uniform" value="M">
+          Medium
+          <br>
+        </label>
+        <label for="ymedium">
+          <input type="radio" id="ymedium" name="uniform" value="YM">
+          Youth Medium
+        </label>
+        <label for="large">
+          <input type="radio" id="large" name="uniform" value="L">
+          Large
+          <br>
+        </label>
+        <label for="ylarge">
+          <input type="radio" id="ylarge" name="uniform" value="YL">
+          Youth Large
+        </label>
+        <label for="elarge">
+          <input type="radio" id="elarge" name="uniform" value="EL">
+          Extra-Large
+          <br>
+        </label>
+        <label for="small">
+          <input type="radio" id="small" name="uniform" value="S">
+          Small
+          <br>
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Permission to Play</legend>
+        <p>
+          I, the parent or guardian of the minor registrant, agree that the registrant and i will abide by all the rules of the Mighty Ducks Hockey League (MDLH). 
+          In recognizing the possibility of physical injury associated with hockey and in consideration for the "League" accepting the registrans for its hockey programs and activities,
+          I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated personnel and volunteers, including the facilities used for the registrat's 
+          participation in the program and/or being transported to ot from MDLH sponsored activities, with transportation.
+        </p>
+        <p>By entering your name below, I hereby agree and authorize the above. In addition, by signing below, I also acknowledge that I have read the cancellation policy and agree to its terms.</p>
+        <label>
+          Parent/Guardian Full Name:
+          <input type="text" id="gname" name="gname">
+        </label>
+        <label>
+          Date:
+          <input type="date" id="date" name="date">
+        </label>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit">
+    </form>
+  </body>
+</html>
